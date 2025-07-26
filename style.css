@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: 5px dashed black;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    transition: all 0.3s ease;
+}
+
+@keyframes fade-in {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+.input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 20px;
+    text-align: right;
+    border: none;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    outline: none;
+    opacity: 0;
+    animation: fade-in 1s ease-in-out 0.5s forwards;
+}
+
+.output {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    font-size: 16px;
+    text-align: right;
+    color: #ffffff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    opacity: 0;
+    animation: fade-in 1s ease-in-out 1s forwards;
+}
+
+.buttons-div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+hr {
+    grid-column: 1 / -1;
+    height: 1px;
+    border: none;
+    background: linear-gradient(to right, transparent, #ffffff66, transparent);
+    margin: 5px 0;
+}
+
+button {
+    height: 45px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #ffffff15;
+    color: #ffffffdd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ac {
+    background: #ff2f20;
+    color: #ffffff;
+    border: none;
+    outline:none
+}
+
+.cross {
+    background: #ffc720;
+    color: #000000;
+    border: none;
+}
+
+.equal {
+    background: #2bff32;
+    color: #000000;
+    border: none;
+}
+
+.plus, .minus, .multiply, .divide, .percent, .power, .root, .pi, .not, .braces {
+    background: #00bcd420;
+    border: 1px solid #00bcd4;
+    color: #00e5ff;
+}
+
+.sin, .cos, .tan, .log {
+    background: #9c27b020;
+    border: 1px solid #9c27b0;
+    color: #e1bee7;
+}
+
+/* Animations */
+.root    { opacity: 0; animation: fade-in 1s ease-in-out 1.2s forwards; }
+.pi      { opacity: 0; animation: fade-in 1s ease-in-out 1.4s forwards; }
+.power   { opacity: 0; animation: fade-in 1s ease-in-out 1.6s forwards; }
+.not     { opacity: 0; animation: fade-in 1s ease-in-out 1.8s forwards; }
+.log     { opacity: 0; animation: fade-in 1s ease-in-out 2s forwards; }
+.tan     { opacity: 0; animation: fade-in 1s ease-in-out 2.2s forwards; }
+.cos     { opacity: 0; animation: fade-in 1s ease-in-out 2.4s forwards; }
+.sin     { opacity: 0; animation: fade-in 1s ease-in-out 2.6s forwards; }
+hr       { opacity: 0; animation: fade-in 1s ease-in-out 2.6s forwards; }
+.ac      { opacity: 0; animation: fade-in 1s ease-in-out 2.8s forwards; }
+.braces  { opacity: 0; animation: fade-in 1s ease-in-out 3s forwards; }
+.percent { opacity: 0; animation: fade-in 1s ease-in-out 3.2s forwards; }
+.divide  { opacity: 0; animation: fade-in 1s ease-in-out 3.4s forwards; }
+.multiply{ opacity: 0; animation: fade-in 1s ease-in-out 3.6s forwards; }
+.minus   { opacity: 0; animation: fade-in 1s ease-in-out 3.8s forwards; }
+.plus    { opacity: 0; animation: fade-in 1s ease-in-out 4s forwards; }
+.equal   { opacity: 0; animation: fade-in 1s ease-in-out 4.2s forwards; }
+.cross   { opacity: 0; animation: fade-in 1s ease-in-out 4.4s forwards; }
+.decimal { opacity: 0; animation: fade-in 1s ease-in-out 4.6s forwards; }
+.zero    { opacity: 0; animation: fade-in 1s ease-in-out 4.8s forwards; }
+.one     { opacity: 0; animation: fade-in 1s ease-in-out 5s forwards; }
+.two     { opacity: 0; animation: fade-in 1s ease-in-out 5.2s forwards; }
+.three   { opacity: 0; animation: fade-in 1s ease-in-out 5.4s forwards; }
+.six     { opacity: 0; animation: fade-in 1s ease-in-out 5.6s forwards; }
+.five    { opacity: 0; animation: fade-in 1s ease-in-out 5.8s forwards; }
+.four    { opacity: 0; animation: fade-in 1s ease-in-out 6s forwards; }
+.seven   { opacity: 0; animation: fade-in 1s ease-in-out 6.2s forwards; }
+.eight   { opacity: 0; animation: fade-in 1s ease-in-out 6.4s forwards; }
+.nine    { opacity: 0; animation: fade-in 1s ease-in-out 6.6s forwards; }
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    
+    button {
+        height: 50px;
+        font-size: 18px;
+    }
+    
+    .input {
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    .output {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 360px) {
+    .buttons-div {
+        gap: 8px;
+    }
+    
+    button {
+        height: 45px;
+        font-size: 16px;
+    }
+}
