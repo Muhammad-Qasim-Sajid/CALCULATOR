@@ -5,7 +5,7 @@ let buttons = document.querySelectorAll("button");
 let storage = "";
 let insertOpenBracket = true;
 
-// factorial 
+// do factorial logic
 function factorial(n) {
     if (n < 0) return NaN;
     if (n === 0 || n === 1) return 1;
@@ -20,7 +20,7 @@ for (let button of buttons) {
         if (value === "=") {
 
             try {
-                //close any not closed brackets before calculation
+                //close not closed brackets before calculating
                 let tempStorage = storage;
                 let openCount = (tempStorage.match(/\(/g) || []).length;
                 let closeCount = (tempStorage.match(/\)/g) || []).length;
