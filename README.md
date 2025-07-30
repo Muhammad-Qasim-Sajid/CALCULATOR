@@ -47,6 +47,3 @@ I also learned how important it is to convert all custom UI button values into v
 
 # Bug or Future Improvements (To-Do)
 Backspace only deletes from the end — needs update to allow deleting at cursor position (like normal text editing).
-
-# License
-This project is released under the [MIT License](LICENSE).
