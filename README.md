@@ -1,6 +1,10 @@
 # Scientific Calculator
 A fully functional scientific calculator built using HTML, CSS, and Vanilla JavaScript, no external libraries or frameworks.
 
+##  Screenshot
+
+![Tic Tac Toe Screenshot](ScreenShot.png)
+
 # Features
 Basic operations: `+`, `-`, `×`, `÷`
 Scientific functions:
