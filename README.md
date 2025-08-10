@@ -1,5 +1,5 @@
 # Scientific Calculator
-A fully functional scientific calculator built using HTML, CSS, and Vanilla JavaScript, no external libraries or frameworks.
+A fully functional scientific calculator built using HTML, CSS, and Vanilla JavaScript, no libraries or frameworks.
 
 ## Link of Scientific Calculator
 [Scientific Calculator](https://scientific-calculator-by-qasim.netlify.app/)
